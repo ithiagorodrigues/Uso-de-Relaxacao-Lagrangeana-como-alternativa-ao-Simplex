@@ -16,9 +16,9 @@ for linha in file:
         dado['variavel']['v'+str(contV-1)] =linha.replace('v ','')
         contV -= 1
     elif 'f' in linha:
-        dado['funcao'] = linha.replace('f ','')
+        dado['funcao']['f'] = linha.replace('f ','')
     elif 'o' in linha:
-        dado['objetivo'] = linha.replace('o ','')
+        dado['objetivo']['o'] = linha.replace('o ','')
     elif 'rq' in linha:
         contR = int(linha.replace('rq ',''))+1
     elif 'r' in linha:
@@ -29,4 +29,9 @@ for linha in file:
 
 file.close()
 
-
+for dado_k,dado_v in dado.items():
+    print(f'{dado_k}')
+    for dados_k, dados_v in dado_v.items():
+        print(f'\t{dados_k} , {dados_v}')
+        pass
+    pass

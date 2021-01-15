@@ -2,7 +2,7 @@ vq 1
 v x
 f m
 o x57 + x67
-rq 14
+rq 15
 r x12-x25 = 0
 r x13 - x34 - x35 -x36 = 0
 r x14 + x34 - x46 = 0
