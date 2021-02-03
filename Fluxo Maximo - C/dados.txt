@@ -1,9 +1,0 @@
-f x=oa+xob
-o   a   40
-o   b   50
-a   c   30
-a   d   50
-b   c   70
-b   d   50
-c   t   40
-d   t   60
